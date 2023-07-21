@@ -1,10 +1,10 @@
+import { AccessModule } from './modules/access/access.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { LoginComponent } from './modules/login/login/login.component';
 
 const routes: Routes = [
   {
-    path: '', pathMatch: 'full', loadChildren: () => import('./modules/login/login.module').then(m => m.LoginModule)
+    path: '', pathMatch: 'full', loadChildren: () => import('./modules/access/access.module').then(m => m.AccessModule)
   }
 ];
 
