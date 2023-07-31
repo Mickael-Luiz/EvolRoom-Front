@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CoreModule } from 'src/app/shared/core.module';
 
 
 @Component({
