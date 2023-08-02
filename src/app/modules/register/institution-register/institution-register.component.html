@@ -1,0 +1,66 @@
+<div class="pageContainer">
+  <div class="registerContainer">
+    <div class="inputContent">
+      <i class="fa-sharp fa-regular fa-building-columns fa-2xl" style="color: #ff01c6; width: 32px; height: 32px;"></i>
+      <h2>Cadastrar Instituição</h2>
+      <div class="inputsContainer">
+        <form class="formData" formGroup="dataForm">
+          <div class="grid">
+
+            <!-- {{dataForm.value.corporateName}} -->
+            <div class="col-12">
+              <div class="flex flex-column gap-2">
+                <label htmlFor="corporateName">Corporate Name</label>
+                <input id="corporateName" class="inputStyle" aria-describedby="corporateName-help"
+                  formControlName="corporateName" />
+                <small id="corporateName-help" *ngIf="False">Enter your username to reset your password.</small>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="flex flex-column gap-2">
+                <label htmlFor="cnpj">CNPJ</label>
+                <input id="cnpj" class="inputStyle" aria-describedby="cnpj-help"
+                formControlName="cnpj" />
+                <small *ngIf="False" id="cnpj-help">Enter your username to reset your password.</small>
+              </div>
+            </div>
+
+            <div class="col-12">
+              <div class="flex flex-column gap-2">
+                <label htmlFor="email">Email</label>
+                <input id="email" class="inputStyle" aria-describedby="email-help"
+                formControlName="email" />
+                <small *ngIf="False" id="email-help">Enter your username to reset your password.</small>
+              </div>
+            </div>
+
+            <div class="col-12 md:col-6 lg:col-6">
+              <div class="flex flex-column gap-2">
+                <label htmlFor="telefone">Telefone</label>
+                <input id="telefone" class="inputStyle" aria-describedby="telefone-help"
+                formControlName="telefone" />
+                <small *ngIf="False" id="telefone-help">Enter your username to reset your password.</small>
+              </div>
+            </div>
+
+            <div class="col-12 md:col-6 lg:col-6">
+              <div class="flex flex-column gap-2">
+                <label htmlFor="celular">Celular</label>
+                <input id="celular" class="inputStyle" aria-describedby="celular-help"
+                formControlName="celular" />
+                <small *ngIf="False" id="celular-help">Enter your username to reset your password.</small>
+              </div>
+            </div>
+
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="imgContent">
+      <div class="imgFundo">
+        <img src="../../../../assets/images/logo-evolroom-branca.png" />
+      </div>
+    </div>
+  </div>
+</div>

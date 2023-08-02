@@ -1,10 +1,15 @@
-import { AccessModule } from './modules/access/access.module';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '', pathMatch: 'full', loadChildren: () => import('./modules/access/access.module').then(m => m.AccessModule)
+    path: '', pathMatch: 'full', redirectTo: 'initial'
+  },
+  {
+    path: 'initial', loadChildren: () => import('./modules/access/access.module').then(m => m.AccessModule)
+  },
+  {
+    path: 'register', loadChildren: () => import('./modules/register/register.module').then(m => m.RegisterModule)
   }
 ];
 

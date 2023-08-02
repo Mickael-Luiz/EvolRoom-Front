@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-import { CoreModule } from 'src/app/shared/core.module';
+
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -9,14 +10,12 @@ import { CoreModule } from 'src/app/shared/core.module';
 })
 export class InitialComponent {
 
-  beneficitVisible = false
+  beneficitVisible: boolean = false
 
-  constructor() {
+  constructor(private router: Router) { }
 
-  }
-
-  showBeneficit() {
-    this.beneficitVisible = !this.beneficitVisible
+  goToSubscriptionPlans() {
+    this.router.navigate(['register/instituteregister'])
   }
 
 }
