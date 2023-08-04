@@ -10,8 +10,6 @@ import { FormGroup, FormBuilder } from '@angular/forms';
 export class InstitutionRegisterComponent {
 
   dataForm!: FormGroup;
-  False: boolean = false;
-  True: boolean = true
 
   constructor(private fb: FormBuilder) {
     this.dataForm = this.fb.group({
