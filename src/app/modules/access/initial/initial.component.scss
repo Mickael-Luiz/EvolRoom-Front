@@ -10,17 +10,20 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     width: 100%;
+    height: 100%;
 
-    .logo {
+    .contentLogo {
+      position: absolute;
+      top: 100px;
       animation: showLogo 4000ms linear 0s 1 forwards;
     }
 
     .buttons {
+      margin-top: 100px;
       width: 400px;
-      position: absolute;
       display: flex;
       align-items: center;
       justify-content: space-evenly;
@@ -39,6 +42,7 @@
         color: white;
         font-weight: 700;
         cursor: pointer;
+        transition: .3s;
 
         .fa-solid {
           font-size: 100px;
@@ -72,12 +76,14 @@
       .btnAccess:hover {
         box-shadow: 3px 3px 4px rgb(248, 171, 197);
         transform: scale(1.1);
+        transition: .4s;
       }
 
     }
 
     .benefit {
       position: absolute;
+      height: 60px;
       width: 100%;
       display: flex;
       flex-direction: column;
@@ -86,23 +92,8 @@
       font-size: 25px;
       color: white;
       animation: benefitLine 5000ms linear 0s 1 backwards;
-      bottom: 0;
+      bottom: 200px;
       overflow: hidden;
-
-      .arrows {
-        cursor: pointer;
-        font-weight: bold;
-        transition: 1s;
-        .arrow {
-          height: 10px;
-        }
-        .arrowAnimed {
-          // animation: up 6s linear 0s infinite;
-        }
-      }
-      .invertedArrows {
-        transform: rotateZ(180deg);
-      }
 
       label {
         margin-top: 10px;
@@ -125,95 +116,137 @@
         border: 1px solid #fff;
         font-size: 14pt;
         cursor: pointer;
+        transition: .3s;
       }
 
-      .benefitLine {
-        height: 5px;
-        width: 100%;
-        color: rgb(255, 255, 255);
-        background-color: white;
-        transition: 1s;
-        overflow: hidden;
+      .btnBenefits:hover {
+        transition: .3s;
+        box-shadow: 3px 3px 4px rgb(248, 171, 197);
       }
 
-      .benefitVisible {
-        height: 430px;
-        width: 100%;
-        color: #fff;
-        background-color: rgba(0, 0, 0, .8);
-        backdrop-filter: blur(10px);
-        border-radius: 10px;
-        overflow-y: auto;
-        padding: 10px;
-      }
-      .benefitVisible::-webkit-scrollbar {
-        display: none;
-      }
     }
-
 
   }
 
 
 
-  @keyframes showLogo {
-    0% {
-      height: 0;
-      width: 0;
-      visibility: hidden;
-    }
+  // @keyframes showLogo {
+  //   0% {
+  //     height: 0;
+  //     width: 0;
+  //   }
 
-    35%{
-      height: 350px;
-      width: 350px;
-    }
+  //   25%{
+  //     height: 350px;
+  //     width: 350px;
+  //   }
 
-    60% {
-      transform: translateY(0px);
-    }
+  //   40% {
+  //     transform: none;
+  //   }
 
-    100% {
-      transform: translateY(-250px);
-      height: 293px;
-      width: 293px;
+  //   60% {
+  //     transform: rotateY(90deg);
+  //   }
+
+  //   70% {
+  //     transform: translateY(0px);
+  //   }
+
+  //   80% {
+  //     height: 350px;
+  //     width: 350px;
+  //   }
+
+  //   100% {
+  //     transform: translateY(-250px);
+  //     height: 293px;
+  //     width: 293px;
+  //   }
+
+  // }
+
+  // @keyframes showButtons {
+  //   0% {
+  //     visibility: hidden;
+  //   }
+
+  //   80% {
+  //     visibility: hidden;
+  //     opacity: 0;
+  //     transform: scale(0.5);
+  //   }
+
+  //   100% {
+  //     opacity: 1;
+  //     visibility: visible;
+  //   }
+  // }
+
+  // @keyframes benefitLine {
+  //   0% {
+  //     width: 0%;
+  //     visibility: hidden;
+  //   }
+
+  //   70% {
+  //     width: 0%;
+  //     visibility: hidden;
+  //   }
+
+  //   100% {
+  //     width: 100%;
+  //     visibility: visible;
+  //   }
+  // }
+
+  @media (max-width: 425px) {
+
+    .content {
+      height: 100%;
+      justify-content: space-around !important;
+
+      .buttons {
+        flex-direction: column;
+        justify-content: space-around !important;
+
+        .btnAccess {
+          height: 50px !important;
+          width: 330px !important;
+          border-radius: 10px !important;
+
+          .fa-solid{
+            display: none;
+          }
+
+        }
+
+        .btnRegister {
+          margin-top: 15px;
+
+        }
+
+      }
+
+      .benefit {
+        height: 205px !important;
+        width: 205px !important;
+        bottom: 50px;
+
+        .btnBenefits {
+          height: 150px !important;
+          width: 150px !important;
+          border-radius: 50% !important;
+          text-align: center;
+
+          .pi {
+            display: none;
+          }
+        }
+      }
+
     }
 
   }
-
-  @keyframes showButtons {
-    0% {
-      visibility: hidden;
-    }
-
-    80% {
-      visibility: hidden;
-      opacity: 0;
-      transform: scale(0.5);
-    }
-
-    100% {
-      opacity: 1;
-      visibility: visible;
-    }
-  }
-
-  @keyframes benefitLine {
-    0% {
-      width: 0%;
-      visibility: hidden;
-    }
-
-    70% {
-      width: 0%;
-      visibility: hidden;
-    }
-
-    100% {
-      width: 100%;
-      visibility: visible;
-    }
-  }
-
-
 
 }
