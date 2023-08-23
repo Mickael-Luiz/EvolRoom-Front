@@ -1,0 +1,53 @@
+<div class="pageContainer">
+  <div class="registerContainer">
+    <div class="firstContent">
+
+      <div class="inputContent">
+
+        <i class="fa-sharp fa-regular fa-building-columns fa-2xl"
+          style="color: #ff01c6; width: 32px; height: 32px;"></i>
+        <h2>Login</h2>
+        <div class="inputsContainer">
+          <form class="formData" formGroup="dataForm">
+            <div class="grid" style="justify-content: center; gap: 20px;">
+
+              <div class="col-9">
+                <div class="flex flex-column gap-2">
+                  <label htmlFor="cnpj">CNPJ</label>
+                  <input id="cnpj" class="inputStyle" aria-describedby="cnpj-help" formControlName="cnpj"
+                    placeholder="12.345.678/0001-07" />
+                  <small id="cnpj-help" *ngIf="false">CNPJ é um campo obrigatório.</small>
+                </div>
+              </div>
+
+              <div class="col-9">
+                <div class="flex flex-column gap-2">
+                  <label htmlFor="password">Senha</label>
+                  <input id="password" class="inputStyle" aria-describedby="password-help" formControlName="password"
+                    placeholder="************" />
+                  <small id="password-help" *ngIf="false">Senha é um campo obrigatório.</small>
+                  <div style="display: flex;">
+                    <input type="checkbox" /> <label>Remember-me</label>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-9 btnContinue">
+                <button class="">Continuar</button>
+              </div>
+
+            </div>
+          </form>
+        </div>
+        <div></div>
+      </div>
+
+    </div>
+    <div class="imgContent">
+      <div class="imgFundo">
+        <img src="../../../../assets/images/logo-evolroom-branca.png" />
+      </div>
+
+    </div>
+  </div>
+</div>
