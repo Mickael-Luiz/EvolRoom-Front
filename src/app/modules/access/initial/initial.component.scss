@@ -208,10 +208,12 @@
       .buttons {
         flex-direction: column;
         justify-content: space-around !important;
+        width: 100%;
 
         .btnAccess {
           height: 50px !important;
-          width: 330px !important;
+          width: 98%;
+          max-width: 330px !important;
           border-radius: 10px !important;
 
           .fa-solid {
