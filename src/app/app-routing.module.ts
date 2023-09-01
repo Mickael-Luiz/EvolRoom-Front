@@ -8,9 +8,6 @@ const routes: Routes = [
   {
     path: 'initial', loadChildren: () => import('./modules/access/access.module').then(m => m.AccessModule)
   },
-  {
-    path: 'register', loadChildren: () => import('./modules/register/register.module').then(m => m.RegisterModule)
-  }
 ];
 
 @NgModule({

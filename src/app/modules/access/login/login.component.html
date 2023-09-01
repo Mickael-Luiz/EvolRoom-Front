@@ -26,8 +26,11 @@
                   <input id="password" class="inputStyle" aria-describedby="password-help" formControlName="password"
                     placeholder="************" />
                   <small id="password-help" *ngIf="false">Senha é um campo obrigatório.</small>
-                  <div style="display: flex;">
-                    <input type="checkbox" /> <label>Remember-me</label>
+                  <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <div style="display: flex; align-items: center;">
+                      <input type="checkbox"/> <label>Remember-me</label>
+                    </div>
+                    <span style="color: blue; text-decoration: underline;">Esqueci minha senha</span>
                   </div>
                 </div>
               </div>

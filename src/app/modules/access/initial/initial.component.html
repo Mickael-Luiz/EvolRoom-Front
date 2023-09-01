@@ -1,14 +1,14 @@
 <div class="pageContainer">
   <div class="content">
 
-    <img src="assets/images/logo-evolroom-branca.png" class="logo">
+    <img src="assets/images/logo-evolroom-branca.png" class="logo" alt="logo evolroom">
 
-    <div class="buttons">
+    <div class="buttons" (click)="goToLogin()">
       <div class="btnAccess btnLogar">
         <i class="fa-solid fa-door-open"></i>
         <label class="lblEntrar">ENTRAR</label>
       </div>
-      <div class="btnAccess btnRegister" (click)="goToSubscriptionPlans()">
+      <div class="btnAccess btnRegister" (click)="goToRegister()">
         <i class="fa-solid fa-id-card"></i>
         <label class="lblRegister" >REGISTRAR</label>
       </div>

@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
-
-import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
-  selector: 'app-institution-register',
-  templateUrl: './institution-register.component.html',
-  styleUrls: ['./institution-register.component.scss']
+  selector: 'app-register',
+  templateUrl: './register.component.html',
+  styleUrls: ['./register.component.scss']
 })
-export class InstitutionRegisterComponent {
+
+export class RegisterComponent {
 
   dataForm!: FormGroup;
 

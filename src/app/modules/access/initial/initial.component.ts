@@ -14,8 +14,12 @@ export class InitialComponent {
 
   constructor(private router: Router) { }
 
-  goToSubscriptionPlans() {
-    this.router.navigate(['register/instituteregister'])
+  goToLogin() {
+    this.router.navigate(['initial/login'])
+  }
+
+  goToRegister() {
+    this.router.navigate(['initial/register'])
   }
 
 }
