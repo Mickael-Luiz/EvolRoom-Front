@@ -27,7 +27,7 @@
     }
 
     .buttons {
-      margin-top: 100px;
+      margin: 100px 0;
       width: 400px;
       display: flex;
       align-items: center;
@@ -97,7 +97,7 @@
       font-size: 25px;
       color: white;
       animation: benefit 5000ms linear 0s 1 forwards;
-      bottom: 200px;
+      bottom: 20%;
       overflow: hidden;
 
       label {
