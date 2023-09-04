@@ -4,7 +4,6 @@ import { ButtonModule } from 'primeng/button';
 import { DialogModule } from 'primeng/dialog';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
-import { LayoutComponent } from './layout/layout.component';
 
 @NgModule({
   declarations: [],

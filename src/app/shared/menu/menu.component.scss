@@ -1,0 +1,37 @@
+.containerOptions {
+  height: 100%;
+  width: 100%;
+
+  .primaryOption {
+    background-color: #5C0749;
+  }
+
+  .primaryOption, .secondaryOption {
+    height: 70px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+    cursor: pointer;
+
+    a, i {
+      color: white;
+      font-weight: bold;
+      font-size: 16pt;
+      margin: 0 5px;
+    }
+
+    i {
+      font-size: 19pt;
+    }
+  }
+
+  .primaryOption:hover {
+    background-image: linear-gradient(rgb(117, 13, 95), #6b0455);
+    transition: .4s;
+  }
+  .secondaryOption:hover {
+    background-image: linear-gradient(#72045a, #5c0749);
+    transition: .4s;
+  }
+}

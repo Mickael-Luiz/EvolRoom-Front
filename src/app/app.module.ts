@@ -7,11 +7,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { EvolGamesModule } from './modules/evol-games/evol-games.module';
 import { CoreModule } from './shared/core.module';
 import { LayoutComponent } from './shared/layout/layout.component';
+import { MenuComponent } from './shared/menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent
+    LayoutComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,
