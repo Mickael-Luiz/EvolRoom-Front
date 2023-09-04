@@ -8,6 +8,9 @@ const routes: Routes = [
   {
     path: 'initial', loadChildren: () => import('./modules/access/access.module').then(m => m.AccessModule)
   },
+  {
+    path: 'evolgames', loadChildren: () => import('./modules/evol-games/evol-games.module').then(m => m.EvolGamesModule)
+  },
 ];
 
 @NgModule({
