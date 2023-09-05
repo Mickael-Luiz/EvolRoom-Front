@@ -1,8 +1,9 @@
 <div class="flex" style="height: 100vh;">
 
-  <div class="menu">
+  <div class="menu" *ngIf="logged">
     <div class="perfil">
       <div class="img"></div>
+      <span>Ed Fícil Junior</span>
     </div>
     <div class="menuOptions">
       <div class="primaryOptions">
@@ -13,7 +14,7 @@
     </div>
   </div>
 
-  <div class="containerPage">
+  <div class="containerPage" *ngIf="!logged">
     <router-outlet></router-outlet>
   </div>
 
