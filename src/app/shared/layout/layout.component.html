@@ -1,21 +1,36 @@
-<div class="flex" style="height: 100vh;">
+<div class="flex" style="height: 100vh; position: relative;" *ngIf="isLogged">
 
-  <div class="menu" *ngIf="logged">
+  <div class="menu">
     <div class="perfil">
-      <div class="img"></div>
-      <span>Ed Fícil Junior</span>
+      <img src="assets/images/perfil.jpg" alt="Foto Perfil" />
+      <div class="span flex">
+        <span>Ed Fícil</span>
+        <i class="pi pi-cog" style="cursor: pointer;"></i>
+      </div>
     </div>
     <div class="menuOptions">
       <div class="primaryOptions">
         <app-menu></app-menu>
       </div>
-      <div class="secondaryOptions"></div>
-      <div class="exit"></div>
+      <div class="exit" (click)="deslogar()">
+        <i class="pi pi-sign-out"></i>
+        <span>Desconectar</span>
+      </div>
     </div>
   </div>
 
-  <div class="containerPage" *ngIf="!logged">
-    <router-outlet></router-outlet>
+  <div class="containerPage" [ngClass]="{'containerPageFull': !menuActivated}">
+    <div class="bar">
+      <div class="toggleMenu" [ngClass]="{'toggleMenuActivated': menuActivated}" (click)="activateMenu()">
+        <div class="toggle toggle1" ></div>
+        <div class="toggle toggle2" ></div>
+        <div class="toggle toggle3" ></div>
+      </div>
+      <img src="assets/images/logo-evolroom-branca.png" >
+    </div>
   </div>
+</div>
 
+<div class="flex" style="height: 100vh; position: relative;" *ngIf="!isLogged">
+  <router-outlet></router-outlet>
 </div>

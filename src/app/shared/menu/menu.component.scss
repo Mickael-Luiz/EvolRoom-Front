@@ -7,8 +7,8 @@
   }
 
   .primaryOption, .secondaryOption {
-    height: 70px;
-    padding: 5px;
+    height: 60px;
+    padding: 10px;
     display: flex;
     align-items: center;
     transition: .5s;
@@ -17,21 +17,21 @@
     a, i {
       color: white;
       font-weight: bold;
-      font-size: 16pt;
-      margin: 0 5px;
+      font-size: 12pt;
+      margin: 0 10px;
     }
 
     i {
-      font-size: 19pt;
+      font-size: 15pt;
     }
   }
 
   .primaryOption:hover {
-    background-image: linear-gradient(rgb(117, 13, 95), #6b0455);
+    background-image: linear-gradient(90deg,#c233a3, #97267f);
     transition: .4s;
   }
   .secondaryOption:hover {
-    background-image: linear-gradient(#72045a, #5c0749);
+    background-image: linear-gradient(90deg, #ac138b, #810767);
     transition: .4s;
   }
 }

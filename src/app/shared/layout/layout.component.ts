@@ -1,3 +1,5 @@
+import { Router } from '@angular/router';
+import { AuthService } from './../../services/auth.service';
 import { Component } from '@angular/core';
 
 @Component({
@@ -7,6 +9,25 @@ import { Component } from '@angular/core';
 })
 export class LayoutComponent {
 
-  logged: boolean = true
+  isLogged: boolean | void = false
+  menuActivated: boolean = true
+
+  constructor(
+    private authService: AuthService,
+    private router: Router
+    ) {
+    this.isLogged = this.authService.isLogged()
+  }
+
+  activateMenu() {
+    this.menuActivated = !this.menuActivated
+  }
+
+  deslogar() {
+    this.isLogged = this.authService.deslogar()
+    this.router.navigate(["/initial"])
+  }
+
+
 
 }
