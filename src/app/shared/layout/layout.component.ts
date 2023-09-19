@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
 })
 export class LayoutComponent {
 
-  isLogged: boolean | void = false
+  isLogged: boolean | void
   menuActivated: boolean = true
 
   constructor(

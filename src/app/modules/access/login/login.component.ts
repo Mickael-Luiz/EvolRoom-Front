@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { AuthService } from './../../../services/auth.service';
 import { Component } from '@angular/core';
 
@@ -8,10 +9,14 @@ import { Component } from '@angular/core';
 })
 export class LoginComponent {
 
-  constructor(private authService: AuthService) {}
+  constructor(
+    private authService: AuthService,
+    private router: Router
+    ) {}
 
   logar() {
     this.authService.logar()
+    this.router.navigate(['/academic'])
   }
 
 }

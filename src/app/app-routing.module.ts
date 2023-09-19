@@ -11,6 +11,9 @@ const routes: Routes = [
   {
     path: 'evolgames', loadChildren: () => import('./modules/evol-games/evol-games.module').then(m => m.EvolGamesModule)
   },
+  {
+    path: 'academic', loadChildren: () => import('./modules/academic/academic.module').then(m => m.AcademicModule)
+  },
 ];
 
 @NgModule({
