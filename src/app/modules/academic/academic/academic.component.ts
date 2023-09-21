@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AcademicComponent {
 
+  constructor() {
+    console.log('passou por aqui');
+  }
+
 }

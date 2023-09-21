@@ -1,6 +1,7 @@
 import { Router } from '@angular/router';
 import { AuthService } from './../../services/auth.service';
 import { Component } from '@angular/core';
+import { appEvents } from '../app-events';
 
 @Component({
   selector: 'app-layout',
@@ -9,14 +10,20 @@ import { Component } from '@angular/core';
 })
 export class LayoutComponent {
 
-  isLogged: boolean | void
+  isLogged: boolean | void = false;
   menuActivated: boolean = true
 
   constructor(
     private authService: AuthService,
     private router: Router
     ) {
-    this.isLogged = this.authService.isLogged()
+    appEvents.add(appEvents.keys.verifyLogin, () => this.verifyLogin());
+    this.verifyLogin();
+  }
+
+  verifyLogin() {
+    this.isLogged = this.authService.isLogged();
+    this.menuActivated = this.isLogged
   }
 
   activateMenu() {
@@ -25,7 +32,7 @@ export class LayoutComponent {
 
   deslogar() {
     this.isLogged = this.authService.deslogar()
-    this.router.navigate(["/initial"])
+    this.router.navigate(['/initial/login'])
   }
 
 

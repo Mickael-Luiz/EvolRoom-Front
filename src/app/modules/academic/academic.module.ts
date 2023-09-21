@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { AcademicRoutingModule } from './academic-routing.module';
-import { AcademicComponent } from './academic.component';
+import { AcademicComponent } from './academic/academic.component';
 
 
 @NgModule({

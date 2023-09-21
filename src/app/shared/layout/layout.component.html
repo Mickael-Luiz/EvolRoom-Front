@@ -1,6 +1,6 @@
-<div class="flex mainContainer" *ngIf="isLogged">
+<div class="flex mainContainer">
 
-  <div class="menu">
+  <div class="menu" *ngIf="isLogged">
     <div class="perfil">
       <img src="assets/images/perfil.jpg" alt="Foto Perfil" />
       <div class="span flex">
@@ -20,7 +20,7 @@
   </div>
 
   <div class="containerPage" [ngClass]="{'containerPageFull': !menuActivated}">
-    <div class="bar">
+    <div class="bar" *ngIf="isLogged">
       <div class="toggleMenu" [ngClass]="{'toggleMenuActivated': menuActivated}" (click)="activateMenu()">
         <div class="toggle toggle1" ></div>
         <div class="toggle toggle2" ></div>
@@ -29,12 +29,9 @@
       </div>
       <img src="assets/images/logo-evolroom-branca.png" >
     </div>
+    <div class="contentPage">
+      <router-outlet></router-outlet>
+    </div>
   </div>
-  <div class="contentPage">
-    <router-outlet></router-outlet>
-  </div>
-</div>
 
-<div class="flex" style="height: 100vh; position: relative;" *ngIf="!isLogged">
-  <router-outlet></router-outlet>
 </div>
