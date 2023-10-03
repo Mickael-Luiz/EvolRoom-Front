@@ -14,7 +14,10 @@ export class AuthGuardReverse implements CanActivate {
   ) { }
 
   canActivate(route: ActivatedRouteSnapshot, state: RouterStateSnapshot): boolean | UrlTree | Observable<boolean | UrlTree> | Promise<boolean | UrlTree> {
-    if (this.authService.isLogged()) return false;
+    if (this.authService.isLogged()) {
+      this.router.navigate(['/academic'])
+      return false;
+    }
     return true
   }
 }

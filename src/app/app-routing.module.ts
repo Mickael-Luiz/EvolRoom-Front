@@ -8,7 +8,7 @@ const routes: Routes = [
     path: '', pathMatch: 'full', redirectTo: 'initial'
   },
   {
-    path: 'initial', loadChildren: () => import('./modules/access/access.module').then(m => m.AccessModule)
+    path: 'initial', loadChildren: () => import('./modules/access/access.module').then(m => m.AccessModule), canActivate: [AuthGuardReverse]
   },
   {
     path: 'evolgames', loadChildren: () => import('./modules/evol-games/evol-games.module').then(m => m.EvolGamesModule)

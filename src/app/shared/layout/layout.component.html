@@ -21,12 +21,12 @@
 
   <div class="containerPage" [ngClass]="{'containerPageFull': !menuActivated}">
     <div class="bar" *ngIf="isLogged">
-      <div class="toggleMenu" [ngClass]="{'toggleMenuActivated': menuActivated}" (click)="activateMenu()">
+      <button class="toggleMenu" [ngClass]="{'toggleMenuActivated': menuActivated}" (click)="activateMenu()">
         <div class="toggle toggle1" ></div>
         <div class="toggle toggle2" ></div>
         <div class="toggle toggle3" ></div>
         <div class="toggle toggle4" ></div>
-      </div>
+      </button>
       <img src="assets/images/logo-evolroom-branca.png" >
     </div>
     <div class="contentPage">
