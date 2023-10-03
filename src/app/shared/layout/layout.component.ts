@@ -1,7 +1,7 @@
+import { appEvents } from './../utils/app-events';
 import { Router } from '@angular/router';
 import { AuthService } from './../../services/auth.service';
 import { Component } from '@angular/core';
-import { appEvents } from '../app-events';
 
 @Component({
   selector: 'app-layout',

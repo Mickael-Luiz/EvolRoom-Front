@@ -1,5 +1,5 @@
+import { appEvents } from './../shared/utils/app-events';
 import { Injectable } from '@angular/core';
-import { appEvents } from '../shared/app-events';
 
 @Injectable({
   providedIn: 'root'

@@ -11,10 +11,10 @@ const routes: Routes = [
     path: 'initial', loadChildren: () => import('./modules/access/access.module').then(m => m.AccessModule), canActivate: [AuthGuardReverse]
   },
   {
-    path: 'evolgames', loadChildren: () => import('./modules/evol-games/evol-games.module').then(m => m.EvolGamesModule)
+    path: 'academic', loadChildren: () => import('./modules/academic/academic.module').then(m => m.AcademicModule), canActivate: [AuthGuard]
   },
   {
-    path: 'academic', loadChildren: () => import('./modules/academic/academic.module').then(m => m.AcademicModule), canActivate: [AuthGuard]
+    path: 'library', loadChildren: () => import('./modules/library/library.module').then(m => m.LibraryModule), canActivate: [AuthGuard]
   },
 ];
 
