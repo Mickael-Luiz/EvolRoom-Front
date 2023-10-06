@@ -10,19 +10,19 @@ import { Component } from '@angular/core';
 })
 export class LayoutComponent {
 
-  isLogged: boolean | void = false;
+  isLogged: boolean | void = false
   menuActivated: boolean = true
 
   constructor(
     private authService: AuthService,
     private router: Router
     ) {
-    appEvents.add(appEvents.keys.verifyLogin, () => this.verifyLogin());
+    appEvents.add(appEvents.keys.verifyLogin, () => this.verifyLogin())
     this.verifyLogin();
   }
 
   verifyLogin() {
-    this.isLogged = this.authService.isLogged();
+    this.isLogged = this.authService.isLogged()
     this.menuActivated = this.isLogged
   }
 
