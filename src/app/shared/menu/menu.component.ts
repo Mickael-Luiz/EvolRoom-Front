@@ -18,14 +18,14 @@ export class MenuComponent {
   primaryOptions: IOption[] = [
     {label: "Academico", icon: 'pi-id-card', url: 'academic'},
     {label: "Biblioteca", icon: 'pi-book', url: 'library'},
-    {label: "Financeiro", icon: 'pi-dollar', url: ''},
-    {label: "EducaJogos", icon: 'pi-prime', url: ''}
+    {label: "Financeiro", icon: 'pi-dollar', url: 'financial'},
+    {label: "EducaJogos", icon: 'pi-prime', url: 'edugames'}
   ]
 
   secondaryOptions: IOption[] = [
-    {label: "Avisos", icon: 'pi-megaphone', url: ''},
-    {label: "Suporte", icon: 'pi-phone', url: ''},
-    {label: "Preferencias", icon: 'pi-cog', url: ''},
+    {label: "Avisos", icon: 'pi-megaphone', url: 'notice'},
+    {label: "Suporte", icon: 'pi-phone', url: 'support'},
+    {label: "Preferencias", icon: 'pi-cog', url: 'preferences'},
   ]
 
 }
