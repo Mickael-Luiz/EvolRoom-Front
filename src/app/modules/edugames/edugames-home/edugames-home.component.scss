@@ -1,0 +1,16 @@
+::ng-deep .containerPage {
+  height: 100%;
+  width: calc(100% - 40px);
+  margin: 20px;
+
+  .filter {
+
+    p-selectButton > div, p-multiSelect > div {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+  }
+
+}
