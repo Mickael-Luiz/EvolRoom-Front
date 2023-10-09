@@ -11,12 +11,12 @@ export class EdugamesHomeComponent {
 
   filter!: FormGroup
 
-  matters: SelectItem[] = [
-    { label: 'Desenvolvimento Web', value: 1},
-    { label: 'Inglês', value: 2},
-    { label: 'Estrutura de Dados', value: 3},
-    { label: 'Geografia', value: 4},
-    { label: 'Matemática', value: 5},
+matters: SelectItem[] = [
+  { label: 'Desenvolvimento Web', value: 1},
+  { label: 'Inglês', value: 2},
+  { label: 'Estrutura de Dados', value: 3},
+  { label: 'Geografia', value: 4},
+  { label: 'Matemática', value: 5},
 ]
 
 types: SelectItem[] = [

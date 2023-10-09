@@ -1,15 +1,27 @@
 ::ng-deep .containerPage {
   height: 100%;
-  width: calc(100% - 40px);
-  margin: 20px;
+  width: 100%;
 
   .filter {
+    padding: 20px;
+    gap: 2px;
 
-    p-selectButton > div, p-multiSelect > div {
-      width: 100%;
-      display: flex;
-      justify-content: center;
+    form {
+
+      p-selectButton > div, p-multiSelect > div, .p-inputtext {
+        width: 100%;
+        display: flex;
+      }
     }
+
+    form > div {
+      padding: 10px;
+
+      label {
+        padding-bottom: 10px;
+      }
+    }
+
 
   }
 
