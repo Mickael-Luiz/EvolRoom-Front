@@ -1,7 +1,7 @@
 .mainContainer {
   height: 100vh;
   position: relative;
-  overflow-x: hidden;
+  // overflow-x: hidden;
 
   .menu {
     height: 100%;
@@ -159,7 +159,7 @@
       height: calc(100% - 100px);
       width: 100%;
       position: relative;
-      // padding: 20px;
+      padding: 20px;
     }
 
   }

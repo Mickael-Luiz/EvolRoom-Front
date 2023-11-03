@@ -5,9 +5,12 @@ import { DialogModule } from 'primeng/dialog';
 import { InputTextModule } from 'primeng/inputtext';
 import { PasswordModule } from 'primeng/password';
 import { MultiSelectModule } from 'primeng/multiselect';
+import { CardCursoComponent } from '../components/card-curso/card-curso.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    CardCursoComponent
+  ],
   imports: [
     CommonModule,
     ButtonModule,
@@ -21,7 +24,8 @@ import { MultiSelectModule } from 'primeng/multiselect';
     DialogModule,
     InputTextModule,
     PasswordModule,
-    MultiSelectModule
+    MultiSelectModule,
+    CardCursoComponent
   ]
 })
 export class CoreModule { }

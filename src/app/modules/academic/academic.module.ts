@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { CoreModule } from 'src/app/shared/core.module';
 
 import { AcademicRoutingModule } from './academic-routing.module';
 import { AcademicComponent } from './academic/academic.component';
@@ -11,6 +12,7 @@ import { AcademicComponent } from './academic/academic.component';
   ],
   imports: [
     CommonModule,
+    CoreModule,
     AcademicRoutingModule
   ]
 })

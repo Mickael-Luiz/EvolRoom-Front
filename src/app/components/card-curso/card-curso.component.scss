@@ -1,0 +1,82 @@
+.card-container {
+  height: 200px;
+  width: 400px;
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+
+  .card-header {
+    height: 80px;
+    width: 100%;
+    background-color: #920072;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+
+    .title {
+      color: white;
+      font-size: 1.3em;
+      flex-wrap: wrap;
+      width: 80%;
+    }
+
+    // .icon-container {
+    //   width: 56px;
+    //   height: 28px;
+    //   background: black;
+    //   position: relative;
+    //   border-radius: 2px;
+    // }
+
+    // .icon-container::before {
+    //   content: "";
+    //   position: absolute;
+    //   top: -14px;
+    //   left: 0;
+    //   width: 0;
+    //   height: 0;
+    //   border-left: 28px solid transparent;
+    //   border-right: 28px solid transparent;
+    //   border-bottom: 14px solid black;
+    // }
+
+    // .icon-container::after {
+    //   content: "";
+    //   position: absolute;
+    //   bottom: -20px;
+    //   left: 0;
+    //   width: 0;
+    //   height: 0;
+    //   border-left: 28px solid transparent;
+    //   border-right: 28px solid transparent;
+    //   border-top: 14px solid black;
+    // }
+
+    .hexagon {
+      width: 56px;
+      height: 30px;
+      background-color: black;
+      position: relative;
+      border-radius: 1px;
+    }
+
+    .hexagon:before,
+    .hexagon:after {
+      content: '';
+      position: absolute;
+      width: 0;
+      border-left: 28px solid transparent;
+      border-right: 28px solid transparent;
+    }
+
+    .hexagon:before {
+      top: -14.5px;
+      border-bottom: 15px solid black;
+    }
+
+    .hexagon:after {
+      bottom: -14.5px;
+      border-top: 15px solid black;
+    }
+  }
+}
