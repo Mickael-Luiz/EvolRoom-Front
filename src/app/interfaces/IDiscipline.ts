@@ -3,4 +3,5 @@ export interface IDiscipline {
   idCourse: number;
   coordinator: string;
   semester: string;
+  teacher: string;
 }

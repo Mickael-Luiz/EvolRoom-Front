@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "title": "Ciência da Computação",
+    "subjectGrid": [
+      {
+        "title": "Programação Orientada a Objetos 2",
+        "idCourse": 1,
+        "coordinator": "Lidia M Silva",
+        "semester": "3° Semestre",
+        "teacher": "Ed Wilson"
+      },
+      {
+        "title": "Projeto Integrador IV",
+        "idCourse": 1,
+        "coordinator": "Lidia M Silva",
+        "semester": "4° Semestre",
+        "teacher": "Ed Wilson"
+      },
+      {
+        "title": "Banco de Dados",
+        "idCourse": 1,
+        "coordinator": "Lidia M Silva",
+        "semester": "2° Semestre",
+        "teacher": "Ed Wilson"
+      }
+    ],
+    "coordinator": "Lidia M Silva"
+  },
+  {
+    "id": 2,
+    "title": "Análise e Desenvolvimento de Sistemas",
+    "subjectGrid": [
+      {
+        "title": "Engenharia de Software",
+        "idCourse": 1,
+        "coordinator": "Lidia M Silva",
+        "semester": "2° Semestre",
+        "teacher": "Ed Wilson"
+      },
+      {
+        "title": "Desenvolvimento Web 2",
+        "idCourse": 2,
+        "coordinator": "Lidia M Silva",
+        "semester": "5° Semestre",
+        "teacher": "Ed Wilson"
+      },
+      {
+        "title": "Lógica Matemática",
+        "idCourse": 2,
+        "coordinator": "Lidia M Silva",
+        "semester": "1° Semestre",
+        "teacher": "Ed Wilson"
+      }
+    ],
+    "coordinator": "Lidia M Silva"
+  }
+]

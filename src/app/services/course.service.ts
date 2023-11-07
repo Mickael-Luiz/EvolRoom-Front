@@ -6,13 +6,13 @@ import { ICourse } from '../interfaces/ICourse';
 @Injectable({
   providedIn: 'root'
 })
-export class DataService {
+export class CourseService {
 
-  private jsonUrl = '';
+  private jsonUrl = 'assets/database/CourseTable.json';
 
   constructor(private http: HttpClient) { }
 
   getJSONData() {
-    return this.http.get(this.jsonUrl) as Observable<ICourse[]>;
+    return this.http.get<ICourse[]>(this.jsonUrl).toPromise();
   }
 }

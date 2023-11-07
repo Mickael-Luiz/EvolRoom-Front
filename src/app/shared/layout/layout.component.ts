@@ -30,8 +30,6 @@ export class LayoutComponent {
     } else {
       document.documentElement.classList.remove('dark-theme');
     }
-    console.log(this.darkMode);
-
   }
 
   verifyLogin() {
