@@ -1,7 +1,7 @@
 .mainContainer {
   height: 100vh;
   position: relative;
-  // overflow-x: hidden;
+  overflow-x: hidden;
 
   .menu {
     height: 100%;
@@ -54,9 +54,8 @@
         color: white;
         gap: 10px;
         font-weight: bold;
-        background-color: rgb(92, 7, 73, 0.7);
+        background-color: var(--primary-pallete);
         cursor: pointer;
-        // border: 1px solid rgb(109, 240, 1);
 
         i {
           margin-left: 25px;
@@ -65,7 +64,7 @@
       }
 
       .exit:hover {
-        background-color: rgb(92, 7, 73);
+        background-color: var(--secondary-pallete);
       }
     }
 
@@ -74,8 +73,9 @@
   .containerPage {
     height: 90%;
     width: 80%;
-    background-color: #ffffff;
+    background-color: var(--background-pallete);
     position: absolute;
+    box-shadow: 0 0 12px black;
     z-index: 2;
     top: calc(50%);
     transform: translateY(-50%);
@@ -86,7 +86,7 @@
       position: relative;
       height: 100px;
       width: 100%;
-      background-image: radial-gradient(#950074, #5C0749);
+      background-color: var(--primary-pallete);
       display: flex;
       align-items: center;
       justify-content: center;
@@ -160,6 +160,7 @@
       width: 100%;
       position: relative;
       padding: 20px;
+      overflow-y: auto;
     }
 
   }

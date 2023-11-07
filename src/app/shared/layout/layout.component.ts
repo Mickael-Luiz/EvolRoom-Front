@@ -13,12 +13,25 @@ export class LayoutComponent {
   isLogged: boolean | void = false
   menuActivated: boolean = true
 
+  darkMode = false;
+
   constructor(
     private authService: AuthService,
     private router: Router
-    ) {
+  ) {
     appEvents.add(appEvents.keys.verifyLogin, () => this.verifyLogin())
     this.verifyLogin();
+  }
+
+  toggleDarkMode() {
+    this.darkMode = !this.darkMode
+    if (this.darkMode) {
+      document.documentElement.classList.add('dark-theme');
+    } else {
+      document.documentElement.classList.remove('dark-theme');
+    }
+    console.log(this.darkMode);
+
   }
 
   verifyLogin() {

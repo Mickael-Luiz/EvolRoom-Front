@@ -1,0 +1,15 @@
+[
+  {
+    "id": 1,
+    "title": "Ciência da Computação",
+    "subjectGrid": [
+      {
+        "title": "Programação Orientada a Objetos 2",
+        "idCourse": 1,
+        "coordinator": "Lidia M Silva",
+        "semester": "3° Semestre"
+      }
+    ],
+    "coordinator": "Lidia M Silva"
+  }
+]

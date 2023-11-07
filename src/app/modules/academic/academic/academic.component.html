@@ -1,3 +1,5 @@
-<app-card-curso>
-
-</app-card-curso>
+<div class="container-cards">
+  <app-card-curso *ngFor="let discipline of disciplines" [title]="discipline.title"
+    [idCourse]="discipline.idCourse" [coordinator]="discipline.coordinator" [semester]="discipline.semester">
+  </app-card-curso>
+</div>

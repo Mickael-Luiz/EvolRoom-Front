@@ -21,8 +21,9 @@
     padding: 0;
     border: 0;
     font-size: 100%;
-    font-family: Helvetica, sans-serif;
+    font-family: Andale Mono, monospace;
     vertical-align: baseline;
+    color: var(--text-dark);
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
@@ -55,6 +56,24 @@ table {
 }
 }
 
+//Light
 :root {
-  --main-radial-gradient: radial-gradient(ellipse at 1px 1px, #920072, #5C0749)
+
+  --text-pallete: #120205;
+  --background-pallete: #fefbfb;
+  --primary-pallete: #a3162d;
+  --secondary-pallete: #fce9ea;
+  --accent-pallete: #c7203c;
+
+  --background-radial-gradient: radial-gradient(ellipse at 1px 1px, #ce3f57, #040101);
+}
+
+//Dark
+:root.dark-theme {
+
+  --text-pallete: #fdedf0;
+  --background-pallete: #040101;
+  --primary-pallete: #a3162d;
+  --secondary-pallete: #160304;
+  --accent-pallete: #c7203c;
 }

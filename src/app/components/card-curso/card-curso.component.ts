@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-curso',
@@ -7,6 +7,9 @@ import { Component } from '@angular/core';
 })
 export class CardCursoComponent {
 
-  constructor() {}
+  @Input() title: string = '';
+  @Input() idCourse: number = 0;
+  @Input() semester: string = '? Semestre';
+  @Input() coordinator: string = ''
 
 }

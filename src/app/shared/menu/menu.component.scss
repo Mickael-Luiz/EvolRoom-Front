@@ -3,7 +3,7 @@
   width: 100%;
 
   .primaryOption {
-    background-color: #5C0749;
+    background-color: var(--primary-pallete);
   }
 
   .primaryOption,
@@ -12,7 +12,7 @@
     padding: 0 10px;
     display: flex;
     align-items: center;
-    transition: .5s;
+    transition: .2s;
     cursor: pointer;
 
     a,
@@ -28,6 +28,7 @@
       display: flex;
       align-items: center;
       width: 220px;
+      font-size: 14pt;
     }
 
     i {
@@ -35,13 +36,13 @@
     }
   }
 
-  .primaryOption:hover {
-    background-image: linear-gradient(90deg, #c233a3, #97267f);
-    transition: .4s;
+  //Tom Vermelho
+  .primaryOption:hover, .secondaryOption:hover {
+    background-color: var(--secondary-pallete);
+
+    i, a {
+      color: var(--primary-pallete);
+    }
   }
 
-  .secondaryOption:hover {
-    background-image: linear-gradient(90deg, #ac138b, #810767);
-    transition: .4s;
-  }
 }
