@@ -13,7 +13,7 @@ export class LayoutComponent {
   isLogged: boolean | void = false
   menuActivated: boolean = true
 
-  darkMode = false;
+  darkMode: string | null = 'light';
 
   constructor(
     private authService: AuthService,
@@ -21,11 +21,18 @@ export class LayoutComponent {
   ) {
     appEvents.add(appEvents.keys.verifyLogin, () => this.verifyLogin())
     this.verifyLogin();
+    this.toggleDarkMode()
   }
 
-  toggleDarkMode() {
-    this.darkMode = !this.darkMode
-    if (this.darkMode) {
+  toggleDarkMode(click?: boolean) {
+    if(!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', 'light')
+    }
+    if(click) {
+      localStorage.setItem('theme', this.darkMode == 'dark' ? 'light' : 'dark');
+    }
+    this.darkMode = localStorage.getItem('theme');
+    if(this.darkMode == 'dark') {
       document.documentElement.classList.add('dark-theme');
     } else {
       document.documentElement.classList.remove('dark-theme');

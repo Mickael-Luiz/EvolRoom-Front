@@ -2,11 +2,11 @@
   <div class="card-header">
     <h1 class="title">{{title}}</h1>
     <div class="icon-curso">
-      <i class="fa-solid fa-code fa-xl"></i>
+      <i [class]="selectCourse()?.icon"></i>
     </div>
   </div>
   <div class="card-body">
-    <h2>{{loadTitle()}}</h2>
+    <h2>{{selectCourse()?.title}}</h2>
     <h3>{{coordinator}}</h3>
     <h3>{{semester}}</h3>
   </div>

@@ -56,24 +56,19 @@ table {
 }
 }
 
-//Light
+//AZUL/ROXO
 :root {
-
-  --text-pallete: #120205;
-  --background-pallete: #fefbfb;
-  --primary-pallete: #a3162d;
-  --secondary-pallete: #fce9ea;
-  --accent-pallete: #c7203c;
-
-  --background-radial-gradient: radial-gradient(ellipse at 1px 1px, #ce3f57, #040101);
+  --text-pallete: #0b1323;
+  --background-pallete: #f4f5fb;
+  --primary-pallete: #284581;
+  --secondary-pallete: #d4def2;
+  --accent-pallete: #275dca;
+  --background-radial-gradient: radial-gradient(ellipse at 1px 1px, #1b5fe7, #000000);
 }
-
-//Dark
 :root.dark-theme {
-
-  --text-pallete: #fdedf0;
-  --background-pallete: #040101;
-  --primary-pallete: #a3162d;
-  --secondary-pallete: #160304;
-  --accent-pallete: #c7203c;
+  --text-pallete: #dce4f4;
+  --background-pallete: #04050b;
+  --primary-pallete: #284581;
+  --secondary-pallete: #0d172b;
+  --accent-pallete: #275dca;
 }

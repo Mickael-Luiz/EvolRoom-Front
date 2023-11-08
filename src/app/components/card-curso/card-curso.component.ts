@@ -21,11 +21,11 @@ export class CardCursoComponent {
   }
 
   async getCourses() {
-    this.courses = await this.courseService.getJSONData() || [];
+    this.courses = await this.courseService.getJSONData() ?? [];
   }
 
-  loadTitle() {
-    return this.courses.find(course => course.id == this.idCourse)?.title;
+  selectCourse() {
+    return this.courses.find(course => course.id == this.idCourse);
   }
 
 }

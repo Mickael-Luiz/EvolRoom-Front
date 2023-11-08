@@ -15,15 +15,18 @@
     transition: .2s;
     cursor: pointer;
 
-    a,
-    i {
+    i,span {
       color: white;
       font-weight: bold;
       font-size: 12pt;
       margin: 0 10px;
     }
 
-    a {
+    i {
+      font-size: 15pt;
+    }
+
+    span {
       height: 100%;
       display: flex;
       align-items: center;
@@ -31,17 +34,21 @@
       font-size: 14pt;
     }
 
-    i {
-      font-size: 15pt;
-    }
   }
 
-  //Tom Vermelho
   .primaryOption:hover, .secondaryOption:hover {
     background-color: var(--secondary-pallete);
 
-    i, a {
-      color: var(--primary-pallete);
+    i, span {
+      color: var(--text-pallete);
+    }
+  }
+
+  .activated {
+    background-color: var(--secondary-pallete);
+
+    i, span {
+      color: var(--text-pallete);
     }
   }
 

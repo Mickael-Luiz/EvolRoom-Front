@@ -2,6 +2,7 @@
   {
     "id": 1,
     "title": "Ciência da Computação",
+    "icon": "fa-solid fa-laptop-code fa-xl",
     "subjectGrid": [
       {
         "title": "Programação Orientada a Objetos 2",
@@ -30,6 +31,7 @@
   {
     "id": 2,
     "title": "Análise e Desenvolvimento de Sistemas",
+    "icon":"fa-solid fa-code fa-xl",
     "subjectGrid": [
       {
         "title": "Engenharia de Software",

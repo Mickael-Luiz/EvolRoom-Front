@@ -1,12 +1,12 @@
 <div class="containerOptions">
   <ul>
-    <li *ngFor="let item of primaryOptions" class="primaryOption">
+    <li *ngFor="let item of primaryOptions" class="primaryOption" [class]="item.activated ? 'activated' : ''" (click)="setMenuActivated(item.url)">
       <i class="pi {{item.icon}}"></i>
-      <a href="{{item.url}}">{{item.label}}</a>
+      <span>{{item.label}}</span>
     </li>
-    <li *ngFor="let item of secondaryOptions" class="secondaryOption">
+    <li *ngFor="let item of secondaryOptions" class="secondaryOption" [class]="item.activated ? 'activated' : ''" (click)="setMenuActivated(item.url)">
       <i class="pi {{item.icon}}"></i>
-      <a href="{{item.url}}">{{item.label}}</a>
+      <span>{{item.label}}</span>
     </li>
   </ul>
 </div>
