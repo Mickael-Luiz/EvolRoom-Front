@@ -19,6 +19,7 @@ export class MenuComponent {
 
   menuActivated: string = ''
   routeActivated: string = ''
+  fullPath: string = ''
 
   primaryOptions: IOption[] = [
     { label: "Academico", icon: 'pi-id-card', url: 'academic', activated: false },
@@ -33,18 +34,21 @@ export class MenuComponent {
     { label: "Preferencias", icon: 'pi-cog', url: 'preferences', activated: false },
   ]
 
-  constructor(private router: Router, private route: ActivatedRoute) {
+  constructor(private router: Router) {
     setTimeout(() => {
-      this.routeActivated = this.router.url.replace('/', '');
-      console.log('cons: ', this.routeActivated);
+      console.log('url: ', this.router.url);
+      this.fullPath = this.router.url
+      this.routeActivated = this.fullPath.split('/')[1].replace('/', '');
+      console.log('activated: ', this.routeActivated);
       this.setMenuActivated(this.routeActivated)
+
     }, 100)
   }
 
-  setMenuActivated(url: string) {
+  setMenuActivated(url: string, click?: boolean) {
     this.primaryOptions.forEach(option => option.activated = option.url == url);
     this.secondaryOptions.forEach(option => option.activated = option.url == url);
-    this.router.navigate([`/${url}`]);
+    if(click) this.router.navigate([url]);
   }
 
 }

@@ -6,14 +6,11 @@ import { AppRoutingModule } from './app-routing.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CoreModule } from './shared/core.module';
-import { LayoutComponent } from './shared/layout/layout.component';
-import { MenuComponent } from './shared/menu/menu.component';
+import { LayoutModule } from './shared/layout/layout.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LayoutComponent,
-    MenuComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,6 +18,7 @@ import { MenuComponent } from './shared/menu/menu.component';
     HttpClientModule,
     CoreModule,
     BrowserAnimationsModule,
+    LayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

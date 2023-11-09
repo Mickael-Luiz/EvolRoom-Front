@@ -8,6 +8,8 @@ import { IClasse } from 'src/app/interfaces/IClasse';
 })
 export class ClassesComponent {
 
+  page: string[] = ['academico', 'aulas'];
+
   classes: IClasse[] = [
     {
       idClasse: 8,

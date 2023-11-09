@@ -33,8 +33,6 @@ export class CardCursoComponent {
   }
 
   navigateTo() {
-    console.log('teste');
-
     this.router.navigate(['/academic/classes']);
   }
 

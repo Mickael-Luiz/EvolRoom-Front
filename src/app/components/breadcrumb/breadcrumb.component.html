@@ -1,0 +1,5 @@
+<div class="beadcrumb">
+  <label *ngFor="let url of splitPath" (click)="navigateTo(url)">
+    {{page[splitPath.indexOf(url)]}}&nbsp;>
+  </label>
+</div>
