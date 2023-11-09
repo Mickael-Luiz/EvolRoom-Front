@@ -36,12 +36,9 @@ export class MenuComponent {
 
   constructor(private router: Router) {
     setTimeout(() => {
-      console.log('url: ', this.router.url);
       this.fullPath = this.router.url
       this.routeActivated = this.fullPath.split('/')[1].replace('/', '');
-      console.log('activated: ', this.routeActivated);
       this.setMenuActivated(this.routeActivated)
-
     }, 100)
   }
 
