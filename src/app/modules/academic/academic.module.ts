@@ -4,11 +4,13 @@ import { CoreModule } from 'src/app/shared/core.module';
 
 import { AcademicRoutingModule } from './academic-routing.module';
 import { AcademicComponent } from './academic/academic.component';
+import { ClassesComponent } from './classes/classes.component';
 
 
 @NgModule({
   declarations: [
-    AcademicComponent
+    AcademicComponent,
+    ClassesComponent
   ],
   imports: [
     CommonModule,

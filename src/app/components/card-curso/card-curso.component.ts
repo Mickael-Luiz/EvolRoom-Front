@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, Input } from '@angular/core';
 import { ICourse } from 'src/app/interfaces/ICourse';
 import { CourseService } from 'src/app/services/course.service';
@@ -16,7 +17,10 @@ export class CardCursoComponent {
 
   courses: ICourse[] = []
 
-  constructor(private courseService: CourseService) {
+  constructor(
+    private courseService: CourseService,
+    private router: Router
+  ) {
     this.getCourses();
   }
 
@@ -26,6 +30,12 @@ export class CardCursoComponent {
 
   selectCourse() {
     return this.courses.find(course => course.id == this.idCourse);
+  }
+
+  navigateTo() {
+    console.log('teste');
+
+    this.router.navigate(['/academic/classes']);
   }
 
 }

@@ -24,7 +24,7 @@ export class AcademicComponent {
   }
 
   async getCourses() {
-    this.courses = await this.courseService.getJSONData() || [];
+    this.courses = await this.courseService.getJSONData() ?? [];
   }
 
   async getDisciplines() {
@@ -32,45 +32,5 @@ export class AcademicComponent {
       course.subjectGrid.forEach(discipline => discipline.teacher == "Ed Wilson" && this.disciplines.push(discipline));
     })
   }
-
-
-  // = [
-  //   {
-  //     title: 'Programação Orientada a Objetos 2',
-  //     idCourse: 1,
-  //     coordinator: 'Lidia M Silva',
-  //     semester: '3° Semestre'
-  //   },
-  //   {
-  //     title: 'Banco de Dados',
-  //     idCourse: 1,
-  //     coordinator: 'Lidia M Silva',
-  //     semester: '2° Semestre'
-  //   },
-  //   {
-  //     title: 'Desenvolvimento Web 2',
-  //     idCourse: 2,
-  //     coordinator: 'Lidia M Silva',
-  //     semester: '5° Semestre'
-  //   },
-  //   {
-  //     title: 'Projeto Integrador IV',
-  //     idCourse: 1,
-  //     coordinator: 'Lidia M Silva',
-  //     semester: '4° Semestre'
-  //   },
-  //   {
-  //     title: 'Engenharia de Software',
-  //     idCourse: 2,
-  //     coordinator: 'Lidia M Silva',
-  //     semester: '2° Semestre'
-  //   },
-  //   {
-  //     title: 'Lógica Matemática',
-  //     idCourse: 2,
-  //     coordinator: 'Lidia M Silva',
-  //     semester: '1° Semestre'
-  //   },
-  // ]
 
 }
