@@ -1,0 +1,13 @@
+.container {
+  border: 1px solid green;
+
+  .content-files {
+    min-height: 120px;
+    border: 1px solid red;
+  }
+
+  .content-list {
+    margin-top: 60PX;
+    min-height: 120px;
+  }
+}

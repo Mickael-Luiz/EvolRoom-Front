@@ -1,6 +1,6 @@
 <app-breadcrumb [page]="page"></app-breadcrumb>
 <div class="container-classes">
-  <div class="folder" *ngFor="let folder of classes">
+  <div class="folder" *ngFor="let folder of classes" (click)="navigateTo()">
     <i class="fa-regular fa-folder-open"></i>
     <label>{{folder.subject}}</label>
   </div>

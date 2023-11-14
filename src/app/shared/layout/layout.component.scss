@@ -55,7 +55,6 @@
         bottom: -3px;
         display: flex;
         align-items: center;
-        color: white;
         gap: 10px;
         font-weight: bold;
         background-color: var(--primary-pallete);
@@ -64,12 +63,20 @@
         i {
           margin-left: 25px;
           font-size: 16pt;
+          color: white;
         }
+
+        label {
+          color: white;
+        }
+
       }
 
       .exit:hover {
         background-color: var(--secondary-pallete);
-        color: var(--primary-pallete);
+        i, label {
+          color: var(--text-pallete);
+        }
       }
     }
 

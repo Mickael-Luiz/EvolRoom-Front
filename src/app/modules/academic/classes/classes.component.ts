@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { IClasse } from 'src/app/interfaces/IClasse';
 
 @Component({
@@ -52,4 +53,11 @@ export class ClassesComponent {
       subject: 'Aula 1 - Ementa',
     }
   ]
+
+  constructor(private router: Router) { }
+
+  navigateTo() {
+    this.router.navigate(['/academic/classes/class'])
+  }
+
 }

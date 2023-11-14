@@ -7,6 +7,7 @@ import { PasswordModule } from 'primeng/password';
 import { MultiSelectModule } from 'primeng/multiselect';
 import { CardCursoComponent } from '../components/card-curso/card-curso.component';
 import { BreadcrumbComponent } from '../components/breadcrumb/breadcrumb.component';
+import { TableModule } from 'primeng/table';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { BreadcrumbComponent } from '../components/breadcrumb/breadcrumb.compone
     DialogModule,
     InputTextModule,
     PasswordModule,
-    MultiSelectModule
+    MultiSelectModule,
+    TableModule
   ],
   exports: [
     ButtonModule,
@@ -28,7 +30,8 @@ import { BreadcrumbComponent } from '../components/breadcrumb/breadcrumb.compone
     PasswordModule,
     MultiSelectModule,
     CardCursoComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    TableModule
   ]
 })
 export class CoreModule { }

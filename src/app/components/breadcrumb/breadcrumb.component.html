@@ -1,5 +1,6 @@
 <div class="beadcrumb">
-  <label *ngFor="let url of splitPath" (click)="navigateTo(url)">
-    {{page[splitPath.indexOf(url)]}}&nbsp;>
+  <label *ngFor="let url of splitPath; let last = last" (click)="navigateTo(url)">
+    {{page[splitPath.indexOf(url)]}}
+    <ng-container *ngIf="!last">&nbsp;></ng-container>
   </label>
 </div>
