@@ -1,0 +1,13 @@
+<table border="1">
+  <thead>
+    <tr>
+      <th *ngFor="let item of infoTable" [style.text-align]="item.align">{{item.column}}</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of tableData">
+      <td *ngFor="let item of infoTable" [style.text-align]="item.align">{{ getProp(row, item.field) }}
+      <span *ngIf="getProp(row, item.field) == 'status'"></span></td>
+    </tr>
+  </tbody>
+</table>

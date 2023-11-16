@@ -8,11 +8,13 @@ import { MultiSelectModule } from 'primeng/multiselect';
 import { CardCursoComponent } from '../components/card-curso/card-curso.component';
 import { BreadcrumbComponent } from '../components/breadcrumb/breadcrumb.component';
 import { TableModule } from 'primeng/table';
+import { TableComponent } from '../components/table/table.component';
 
 @NgModule({
   declarations: [
     CardCursoComponent,
-    BreadcrumbComponent
+    BreadcrumbComponent,
+    TableComponent
   ],
   imports: [
     CommonModule,
@@ -31,6 +33,7 @@ import { TableModule } from 'primeng/table';
     MultiSelectModule,
     CardCursoComponent,
     BreadcrumbComponent,
+    TableComponent,
     TableModule
   ]
 })

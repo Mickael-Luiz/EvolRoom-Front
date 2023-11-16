@@ -1,0 +1,36 @@
+table {
+  width: 100%;
+  color: var(--text-pallete);
+
+  th, td {
+    border-right: 1px solid #777777;
+    padding: 10px;
+  }
+
+  tr th:last-child, tr td:last-child {
+    border: none;
+  }
+
+  thead {
+    tr {
+      background-color: var(--primary-pallete);
+
+      th {
+        padding: 10px;
+        color: white;
+      }
+    }
+
+  }
+
+  tbody tr:nth-child(even) {
+    background-color: var(--secondary-pallete);
+    transition: .3s;
+
+    span {
+      background-color: red;
+    }
+  }
+}
+
+
