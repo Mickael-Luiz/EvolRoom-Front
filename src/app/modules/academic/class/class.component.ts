@@ -1,12 +1,6 @@
 import { Component } from '@angular/core';
+import { IInfoTable } from 'src/app/interfaces/IInfoTable';
 import { IStudent } from 'src/app/interfaces/IStudent';
-
-export interface IInfoTable {
-  column: string;
-  field: string;
-  type: string;
-  align?: string;
-}
 
 @Component({
   selector: 'app-class',
@@ -19,10 +13,13 @@ export class ClassComponent {
   students!: IStudent[];
   columns: string[] = ['Nome', 'Turma', 'Status']
   infoTable: IInfoTable[] = [
-    {column: 'Nome', field: 'name', type: 'text'},
-    {column: 'Turma', field: 'class', type: 'text', align: 'center'},
-    {column: 'Status', field: 'status', type: 'text', align: 'center'},
-    // {column: 'Ações', field: 'action', type: 'button'}
+    {column: 'Nome', field: 'name'},
+    {column: 'Turma', field: 'class', align: 'center'},
+    {column: 'Status', field: 'status', align: 'center'},
+    {column: 'Ações', field: 'action', align: 'center', buttons: [
+      { icon: 'pi pi-eye', color: 'blue', backgroundColor: 'white' },
+      { icon: 'pi pi-check', color: 'green', backgroundColor: 'white' },
+    ]}
   ]
   tableData: object[] = [
     {name: 'Mickael Luiz Dias da Silva', class: '3 Semestre', status: 'Avaliado'},
@@ -30,9 +27,5 @@ export class ClassComponent {
     {name: 'Mickael Luiz Dias da Silva', class: '1 Semestre', status: 'Avaliado'},
     {name: 'Mickael Luiz Dias da Silva', class: '2 Semestre', status: 'Não Enviado'}
   ]
-
-  constructor() {
-
-  }
 
 }

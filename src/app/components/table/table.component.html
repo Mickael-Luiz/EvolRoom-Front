@@ -1,4 +1,5 @@
 <table border="1">
+  <caption></caption>
   <thead>
     <tr>
       <th *ngFor="let item of infoTable" [style.text-align]="item.align">{{item.column}}</th>
@@ -7,7 +8,16 @@
   <tbody>
     <tr *ngFor="let row of tableData">
       <td *ngFor="let item of infoTable" [style.text-align]="item.align">{{ getProp(row, item.field) }}
-      <span *ngIf="getProp(row, item.field) == 'status'"></span></td>
+
+        <div *ngIf="getProp(row, item.field) === 'status'">teste</div>
+
+          <div class="contentAction">
+            <button *ngFor="let button of item.buttons" [style.background-color]="button.backgroundColor" class="buttonAction">
+              <i [class]="button.icon" [style.color]="button.color"></i>
+            </button>
+          </div>
+
+      </td>
     </tr>
   </tbody>
 </table>

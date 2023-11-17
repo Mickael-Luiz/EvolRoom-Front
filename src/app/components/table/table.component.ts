@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { IInfoTable } from 'src/app/modules/academic/class/class.component';
+import { IInfoTable } from 'src/app/interfaces/IInfoTable';
 
 @Component({
   selector: 'app-table',
@@ -13,6 +13,7 @@ export class TableComponent {
   @Input() tableData: object[] = []
 
   getProp(obj: any, prop: string) {
+    console.log('teste');
     return obj[prop];
   }
 
