@@ -7,17 +7,29 @@
   </thead>
   <tbody>
     <tr *ngFor="let row of tableData">
-      <td *ngFor="let item of infoTable" [style.text-align]="item.align">{{ getProp(row, item.field) }}
 
-        <div *ngIf="getProp(row, item.field) === 'status'">teste</div>
+      <td *ngFor="let item of infoTable" [style.text-align]="item.align">
 
-          <div class="contentAction">
-            <button *ngFor="let button of item.buttons" [style.background-color]="button.backgroundColor" class="buttonAction">
-              <i [class]="button.icon" [style.color]="button.color"></i>
-            </button>
-          </div>
+        <span *ngIf="item.field !== 'status' ">
+          {{ getProp(row, item.field) }}
+        </span>
+
+        <span *ngIf="item.field === 'status' "
+        [ngStyle]="getStatusColor(row)"
+        style="display: block; padding: 5px 10px; border-radius: 15px; width: 130px; margin: 0 auto;">
+          {{ getProp(row, item.field) }}
+        </span>
+
+
+        <div *ngIf="item.field === 'action'" class="contentAction">
+          <button *ngFor="let button of item.buttons" [style.background-color]="button.backgroundColor"
+            class="buttonAction">
+            <i [class]="button.icon" [style.color]="button.color"></i>
+          </button>
+        </div>
 
       </td>
+
     </tr>
   </tbody>
 </table>
