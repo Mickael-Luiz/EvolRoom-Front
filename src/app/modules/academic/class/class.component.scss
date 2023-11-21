@@ -12,3 +12,9 @@
     min-height: 120px;
   }
 }
+
+@media (max-width: 700px) {
+  .container-class {
+    padding: 20px 0;
+  }
+}
