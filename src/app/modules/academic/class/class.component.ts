@@ -25,7 +25,10 @@ export class ClassComponent {
     {name: 'Mickael Luiz Dias da Silva', class: '3 Semestre', status: 'Avaliado'},
     {name: 'Mickael Luiz Dias da Silva', class: '4 Semestre', status: 'Pendente'},
     {name: 'Mickael Luiz Dias da Silva', class: '1 Semestre', status: 'Avaliado'},
-    {name: 'Mickael Luiz Dias da Silva', class: '2 Semestre', status: 'Não Enviado'}
+    {name: 'Mickael Luiz Dias da Silva', class: '2 Semestre', status: 'Não Enviado'},
+    {name: 'Mickael Luiz Dias da Silva', class: '2 Semestre', status: 'Não Enviado'},
+    {name: 'Mickael Luiz Dias da Silva', class: '2 Semestre', status: 'Pendente'},
+    {name: 'Mickael Luiz Dias da Silva', class: '2 Semestre', status: 'Avaliado'}
   ]
 
 }

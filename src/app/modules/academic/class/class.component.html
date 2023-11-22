@@ -1,7 +1,26 @@
 <app-breadcrumb [page]="page"></app-breadcrumb>
 <div class="container-class">
-  <div class="content-files">
-
+  <div class="content-files" style="display: flex; gap: 50px;">
+    <div class="file">
+      <i class="fa-solid fa-file-arrow-up fa-2xl" style="color: rgba(200, 200, 200, .7);"></i>
+      <span> Upload </span>
+    </div>
+    <div class="file">
+      <i class="fa-solid fa-file-excel fa-2xl" style="color:green;"></i>
+      <span> Example.xlsx </span>
+    </div>
+    <div class="file">
+      <i class="fa-solid fa-file-powerpoint fa-2xl" style="color: rgb(228, 148, 0);"></i>
+      <span> Example.ppt </span>
+    </div>
+    <div class="file">
+      <i class="fa-solid fa-file-word fa-2xl" style="color: rgb(0, 118, 228);"></i>
+      <span> Example.doc </span>
+    </div>
+    <div class="file">
+      <i class="fa-solid fa-book fa-2xl" style="color: rgb(0, 29, 109);"></i>
+      <span> Lista de Chamada </span>
+    </div>
   </div>
   <div class="content-list">
     <app-table [infoTable]="infoTable" [tableData]="tableData">

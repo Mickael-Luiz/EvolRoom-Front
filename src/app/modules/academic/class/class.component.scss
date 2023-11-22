@@ -4,7 +4,27 @@
 
   .content-files {
     min-height: 120px;
-    border: 1px solid red;
+    // border: 1px solid red;
+
+    .file {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      width: auto;
+      cursor: pointer;
+
+
+      i {
+        display: flex;
+        justify-content: center;
+        line-height: 64px;
+      }
+
+      i::before {
+        font-size: 2em;
+      }
+    }
   }
 
   .content-list {
