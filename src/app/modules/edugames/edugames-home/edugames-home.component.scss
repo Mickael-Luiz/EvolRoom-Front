@@ -25,4 +25,20 @@
 
   }
 
+  .contentPage {
+
+    .categorieDesc {
+      font-size: 24pt;
+      padding: 1em;
+      color: #888;
+      text-shadow: 1px 1px 3px #efefef;
+    }
+
+    .games-content {
+      display: flex;
+      gap: 50px;
+      flex-wrap: wrap;
+    }
+  }
+
 }

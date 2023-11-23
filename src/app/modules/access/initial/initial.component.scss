@@ -4,7 +4,7 @@
   justify-content: center;
   height: 100vh;
   width: 100vw;
-  background-image: var(--main-radial-gradient);
+  background-image: var(--background-radial-gradient);
 
   .content {
     position: relative;
@@ -18,7 +18,6 @@
 
     .logo {
       position: absolute;
-      // top: 100px;
       overflow: hidden;
       display: flex;
       align-items: center;
@@ -95,7 +94,6 @@
       align-items: center;
       justify-content: center;
       font-size: 25px;
-      color: white;
       animation: benefit 5000ms linear 0s 1 forwards;
       bottom: 20%;
       overflow: hidden;
@@ -110,6 +108,7 @@
       }
 
       .btnBenefits {
+        color: white;
         position: relative;
         display: flex;
         align-items: center;
