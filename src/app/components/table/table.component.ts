@@ -8,7 +8,6 @@ import { IInfoTable } from 'src/app/interfaces/IInfoTable';
 })
 export class TableComponent {
 
-  @Input() columns: string[] = []
   @Input() infoTable: IInfoTable[] = []
   @Input() tableData: object[] = []
 
